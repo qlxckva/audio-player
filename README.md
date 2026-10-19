@@ -1,14 +1,8 @@
 ﻿# Аудиоплеер
 
-Учебное настольное приложение на Python и PySide6 для работы с плейлистом и аудиотреками.
-
 ## Запуск
 
-Установите зависимость командой `pip install -r requirements.txt`, затем из папки проекта выполните:
-
-```bash
-python main.py
-```
+зависимости если не запускается: `pip install -r requirements.txt`
 
 ## Что умеет программа
 
@@ -38,6 +32,16 @@ python main.py
 - `widgets.py` — компоненты интерфейса.
 - `report.py` — запись отчёта.
 - `config.py` — расширения аудиофайлов и настройки отчёта.
+
+## Скриншоты 
+- Окно входа
+<img width="276" height="168" alt="image" src="https://github.com/user-attachments/assets/9deb8338-7c48-4a28-b11f-8154de8d0fd0" />
+- Главное окно 
+<img width="672" height="542" alt="image" src="https://github.com/user-attachments/assets/e31a43b6-6b86-4396-926b-ceed2cd5cfa8" />
+- Отчет
+<img width="847" height="410" alt="image" src="https://github.com/user-attachments/assets/d8ce7375-7af6-41b0-83a9-6c6a134ddba9" />
+
+
 
 
 
