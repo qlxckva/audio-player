@@ -26,24 +26,6 @@
 <img width="598" height="644" alt="image" src="https://github.com/user-attachments/assets/09e8c830-7971-490e-b4de-12494b088e88" />
 
 
-## Запуск из исходного кода
-
-```
-pip install -r requirements.txt
-python audio_player.py
-```
-
-Нужен Python 3.9 или новее.
-
-## Запуск готовой программы (Windows)
-
-Скачайте `AudioPlayer.exe` из раздела **Releases** и запустите. Python не нужен.
-
-## Сборка exe самостоятельно
-
-Запустите `build.bat` (или выполните команды из него вручную).
-Готовый файл появится в папке `dist`.
-
 ## Структура кода
 
 | Класс | Назначение |
