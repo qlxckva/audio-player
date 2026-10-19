@@ -1,4 +1,3 @@
-# Аудиоплеер, лабораторная/зачет по ООП
 # pip install PySide6
 import sys
 import os
@@ -24,9 +23,9 @@ REPORT_FILE = os.path.join(BASE_DIR, "report.txt")
 AUDIO_EXT = (".mp3", ".wav", ".ogg", ".flac", ".m4a")
 
 
-# ------------------------------------------------------------------
+
 # Модели (сущности). Все наследуются от абстрактного класса Entity
-# ------------------------------------------------------------------
+
 
 @total_ordering
 class Entity(ABC):
@@ -281,9 +280,8 @@ class SessionReport:
             f.write(line + "\n" + head + "\n" + sep + "\n" + row + "\n" + line + "\n\n")
 
 
-# ------------------------------------------------------------------
+
 # Переопределенные компоненты окна
-# ------------------------------------------------------------------
 
 class HoverButton(QPushButton):
     """Кнопка которая подсвечивается при наведении"""
@@ -463,9 +461,9 @@ class LoginDialog(QDialog):
         return self.edit.text().strip()
 
 
-# ------------------------------------------------------------------
+
 # Главное окно
-# ------------------------------------------------------------------
+
 
 class MainWindow(QMainWindow):
     def __init__(self, user):
@@ -600,7 +598,7 @@ class MainWindow(QMainWindow):
         self.player.durationChanged.connect(self.on_duration)
         self.player.mediaStatusChanged.connect(self.on_status)
 
-    # ---------- работа с плейлистом ----------
+    #работа с плейлистом
 
     def open_files(self):
         files, _ = QFileDialog.getOpenFileNames(
@@ -677,7 +675,7 @@ class MainWindow(QMainWindow):
         else:
             self.genre_box.setCurrentIndex(self.genres.index(g))
 
-    # ---------- управление воспроизведением ----------
+    # управление воспроизведением
 
     def on_item_double(self, item):
         self.play_index(self.playlist.row(item))
@@ -734,7 +732,7 @@ class MainWindow(QMainWindow):
         if status == QMediaPlayer.MediaStatus.EndOfMedia:
             self.next_track()
 
-    # ---------- закрытие ----------
+    # закрытие 
 
     def closeEvent(self, event):
         self.player.stop()
