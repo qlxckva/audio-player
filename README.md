@@ -25,15 +25,3 @@
 [Отчёт] 
 <img width="598" height="644" alt="image" src="https://github.com/user-attachments/assets/09e8c830-7971-490e-b4de-12494b088e88" />
 
-
-## Структура кода
-
-| Класс | Назначение |
-|---|---|
-| `Entity` (абстрактный) | базовый класс сущностей |
-| `Track`, `Genre`, `User` | модели данных |
-| `GenreMap` | собственный маппинг вместо `dict` |
-| `SessionReport` | запись отчёта о работе |
-| `HoverButton`, `PlayButton`, `StopButton`, `NextButton`, `PrevButton`, `SeekSlider`, `VolumeSlider`, `TimeLabel`, `TitleLabel`, `SearchEdit`, `GenreCombo`, `PlaylistWidget`, `LoginDialog` | переопределённые компоненты Qt |
-| `MainWindow` | главное окно |
-| `PlayerApp` | запуск приложения |
